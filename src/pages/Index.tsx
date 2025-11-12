@@ -33,22 +33,22 @@ const Index = () => {
         
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-12 animate-fade-in">
-            <Badge className="mb-6 text-base px-6 py-2 bg-accent text-accent-foreground hover:bg-accent/90">
-              Руководство для владельцев интернет-магазинов
+            <Badge className="mb-8 text-lg md:text-xl px-8 py-3 bg-accent text-accent-foreground hover:bg-accent/90">
+              Руководство для владельцев <span className="inline md:inline">интернет-магазинов</span>
             </Badge>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-to-r from-white via-accent/20 to-white bg-clip-text text-transparent">
                 3 способа увеличить
               </span>
               <br />
-              <span className="text-accent">количество заказов</span>
+              <span className="text-accent">количество заказов х2-х3</span>
               <br />
               <span className="bg-gradient-to-r from-white via-accent/20 to-white bg-clip-text text-transparent">
                 с контекстной рекламы
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto font-light">
-              Х2-Х3 без увеличения среднего рекламного бюджета
+              без увеличения рекламного бюджета
             </p>
             <Button 
               size="lg" 
