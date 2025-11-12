@@ -38,9 +38,11 @@ const Index = () => {
             </Badge>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-to-r from-white via-accent/20 to-white bg-clip-text text-transparent">
-                3 способа увеличить количество заказов{' '}
-                <span className="text-accent text-5xl md:text-7xl lg:text-8xl whitespace-nowrap">х2-х3</span>
+                3 способа увеличить
               </span>
+              <br />
+              <span className="text-white">количество заказов </span>
+              <span className="text-accent text-5xl md:text-7xl lg:text-8xl">х2-х3</span>
               <br />
               <span className="bg-gradient-to-r from-white via-accent/20 to-white bg-clip-text text-transparent">
                 с контекстной рекламы
