@@ -264,6 +264,14 @@ const Index = () => {
                     <img 
                       src="https://cdn.poehali.dev/files/2e70d577-90b6-4918-86c9-cbcb48826207.png" 
                       alt="Пример нерелевантного объявления в Яндексе"
+                      className="w-full h-auto rounded-lg shadow-md mb-4"
+                    />
+                    <p className="text-sm mb-4">
+                      Переходя по ссылке, посетитель попадает в карточку не того товара, который он искал.
+                    </p>
+                    <img 
+                      src="https://cdn.poehali.dev/files/f0ab5b66-cadc-4087-a99c-5d206f67e10c.png" 
+                      alt="Карточка неправильного товара после перехода"
                       className="w-full h-auto rounded-lg shadow-md"
                     />
                   </div>
