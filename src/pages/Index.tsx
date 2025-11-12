@@ -143,9 +143,14 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">
             Каких результатов позволяет достичь мой подход
           </h2>
-          <p className="text-center text-white/90 mb-12 text-lg">
-            С 2020 года сотрудничаю с ИП Таболкин Алексей Станиславович, г. Санкт-Петербург
-          </p>
+          <div className="text-center mb-12">
+            <p className="text-white/90 text-lg mb-2">
+              С 2020 года сотрудничаю с ИП Таболкин Алексей Станиславович г. Санкт-Петербург.
+            </p>
+            <p className="text-white/90 text-lg">
+              Рекламные показатели за последние 365 дней:
+            </p>
+          </div>
           
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <Card className="bg-white/10 border-white/20 text-white hover:bg-white/15 transition-all duration-300">
