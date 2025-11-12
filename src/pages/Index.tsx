@@ -314,10 +314,21 @@ const Index = () => {
                         alt="Правильное релевантное объявление"
                         className="w-full h-auto rounded-lg shadow-md mb-4"
                       />
-                      <p className="text-sm font-semibold text-accent">
+                      <p className="text-sm font-semibold text-accent mb-4">
                         Ссылка в объявлении ведет в карточку искомого товара.
                       </p>
+                      <img 
+                        src="https://cdn.poehali.dev/files/e641f80b-e713-4b82-acfa-486cd14efc06.png" 
+                        alt="Правильная карточка нужного товара"
+                        className="w-full h-auto rounded-lg shadow-md"
+                      />
                     </div>
+                  </div>
+
+                  <div className="mt-6 p-6 bg-primary/5 rounded-lg border-2 border-primary/20">
+                    <p className="text-lg font-semibold text-primary text-center">
+                      Из трех объявлений только одно соблюдает условие релевантности. А у вас все в порядке с этим?
+                    </p>
                   </div>
                 </div>
               </CardContent>
