@@ -41,7 +41,8 @@ const Index = () => {
                 3 способа увеличить
               </span>
               <br />
-              <span className="text-accent">количество заказов х2-х3</span>
+              <span className="text-white">количество заказов </span>
+              <span className="text-accent text-5xl md:text-7xl lg:text-8xl">х2-х3</span>
               <br />
               <span className="bg-gradient-to-r from-white via-accent/20 to-white bg-clip-text text-transparent">
                 с контекстной рекламы
