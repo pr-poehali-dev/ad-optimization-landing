@@ -300,6 +300,24 @@ const Index = () => {
                         Грустно смотреть на такую рекламу. Ни на одном шаге нет релевантности.
                       </p>
                     </div>
+
+                    <div className="bg-accent/10 p-4 rounded-lg border-l-4 border-accent">
+                      <h4 className="font-bold text-accent mb-2">№3 - Правильный пример ✅</h4>
+                      <p className="text-sm mb-4">
+                        Единственный рекламодатель, соблюдающий условие на каждом шаге.
+                      </p>
+                      <p className="text-sm font-semibold mb-4">
+                        Заголовок полностью повторяет запрос.
+                      </p>
+                      <img 
+                        src="https://cdn.poehali.dev/files/bdcf6f88-89ce-4936-93ac-546036391c5c.png" 
+                        alt="Правильное релевантное объявление"
+                        className="w-full h-auto rounded-lg shadow-md mb-4"
+                      />
+                      <p className="text-sm font-semibold text-accent">
+                        Ссылка в объявлении ведет в карточку искомого товара.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </CardContent>
