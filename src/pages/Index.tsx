@@ -232,12 +232,40 @@ const Index = () => {
                   <div className="bg-destructive/10 p-4 rounded-xl mr-6">
                     <Icon name="AlertTriangle" size={40} className="text-destructive" />
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <Badge className="mb-3 bg-destructive text-white">Ошибка #1</Badge>
                     <h3 className="text-2xl font-bold mb-2">Отсутствие релевантности</h3>
-                    <p className="text-muted-foreground">
+                    <p className="text-muted-foreground mb-4">
                       Посетители ищут конкретный товар, а попадают на главную страницу или в карточку другого товара.
                     </p>
+                  </div>
+                </div>
+
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    Когда человек ищет какой-то товар в поиске, ему должно показываться объявление, того товара, что он ищет.
+                  </p>
+                  <p>
+                    При переходе по этому объявлению на сайт, посетитель должен попасть в карточку именно того товара, который он ищет.
+                  </p>
+                  <p className="font-semibold text-foreground">
+                    Что происходит в действительности? Давайте посмотрим.
+                  </p>
+                  <p>
+                    Возьмем для примера запрос из ниши комплектующих для ЧПУ станков: <strong>«Драйвер шагового серво-двигателя HBS57H»</strong>.
+                  </p>
+
+                  <div className="bg-muted/50 p-4 rounded-lg border-l-4 border-destructive">
+                    <h4 className="font-bold text-destructive mb-2">№1 - Плохой пример</h4>
+                    <p className="text-sm mb-4">
+                      Первый рекламодатель соблюдает релевантность лишь отчасти. В заголовке объявления говорится о драйвере для сервоприводов. 
+                      В описании же объявления говорится об отличной от искомой модели драйвера.
+                    </p>
+                    <img 
+                      src="https://cdn.poehali.dev/files/2e70d577-90b6-4918-86c9-cbcb48826207.png" 
+                      alt="Пример нерелевантного объявления в Яндексе"
+                      className="w-full h-auto rounded-lg shadow-md"
+                    />
                   </div>
                 </div>
               </CardContent>
