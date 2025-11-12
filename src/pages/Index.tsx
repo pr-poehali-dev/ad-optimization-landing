@@ -255,25 +255,40 @@ const Index = () => {
                     Возьмем для примера запрос из ниши комплектующих для ЧПУ станков: <strong>«Драйвер шагового серво-двигателя HBS57H»</strong>.
                   </p>
 
-                  <div className="bg-muted/50 p-4 rounded-lg border-l-4 border-destructive">
-                    <h4 className="font-bold text-destructive mb-2">№1 - Плохой пример</h4>
-                    <p className="text-sm mb-4">
-                      Первый рекламодатель соблюдает релевантность лишь отчасти. В заголовке объявления говорится о драйвере для сервоприводов. 
-                      В описании же объявления говорится об отличной от искомой модели драйвера.
-                    </p>
-                    <img 
-                      src="https://cdn.poehali.dev/files/2e70d577-90b6-4918-86c9-cbcb48826207.png" 
-                      alt="Пример нерелевантного объявления в Яндексе"
-                      className="w-full h-auto rounded-lg shadow-md mb-4"
-                    />
-                    <p className="text-sm mb-4">
-                      Переходя по ссылке, посетитель попадает в карточку не того товара, который он искал.
-                    </p>
-                    <img 
-                      src="https://cdn.poehali.dev/files/f0ab5b66-cadc-4087-a99c-5d206f67e10c.png" 
-                      alt="Карточка неправильного товара после перехода"
-                      className="w-full h-auto rounded-lg shadow-md"
-                    />
+                  <div className="space-y-6">
+                    <div className="bg-muted/50 p-4 rounded-lg border-l-4 border-destructive">
+                      <h4 className="font-bold text-destructive mb-2">№1 - Плохой пример</h4>
+                      <p className="text-sm mb-4">
+                        Первый рекламодатель соблюдает релевантность лишь отчасти. В заголовке объявления говорится о драйвере для сервоприводов. 
+                        В описании же объявления говорится об отличной от искомой модели драйвера.
+                      </p>
+                      <img 
+                        src="https://cdn.poehali.dev/files/2e70d577-90b6-4918-86c9-cbcb48826207.png" 
+                        alt="Пример нерелевантного объявления в Яндексе"
+                        className="w-full h-auto rounded-lg shadow-md mb-4"
+                      />
+                      <p className="text-sm mb-4">
+                        Переходя по ссылке, посетитель попадает в карточку не того товара, который он искал.
+                      </p>
+                      <img 
+                        src="https://cdn.poehali.dev/files/f0ab5b66-cadc-4087-a99c-5d206f67e10c.png" 
+                        alt="Карточка неправильного товара после перехода"
+                        className="w-full h-auto rounded-lg shadow-md"
+                      />
+                    </div>
+
+                    <div className="bg-muted/50 p-4 rounded-lg border-l-4 border-destructive">
+                      <h4 className="font-bold text-destructive mb-2">№2 - Еще хуже</h4>
+                      <p className="text-sm mb-4">
+                        В объявлении другого рекламодателя вовсе не говорится о драйверах для серводвигателей. 
+                        Вместо этого текст в общем о «Комплектующих для станков с ЧПУ!»
+                      </p>
+                      <img 
+                        src="https://cdn.poehali.dev/files/13ba27dd-68f3-4435-8809-708fb70bff68.png" 
+                        alt="Совершенно нерелевантное объявление"
+                        className="w-full h-auto rounded-lg shadow-md"
+                      />
+                    </div>
                   </div>
                 </div>
               </CardContent>
