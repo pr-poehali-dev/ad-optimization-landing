@@ -326,9 +326,19 @@ const Index = () => {
                   </div>
 
                   <div className="mt-6 p-6 bg-primary/5 rounded-lg border-2 border-primary/20">
-                    <p className="text-lg font-semibold text-primary text-center">
+                    <p className="text-lg font-semibold text-primary text-center mb-4">
                       Из трех объявлений только одно соблюдает условие релевантности. А у вас все в порядке с этим?
                     </p>
+                    <div className="flex justify-center">
+                      <Button 
+                        size="lg"
+                        className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-6 rounded-xl shadow-lg hover:scale-105 transition-all duration-300"
+                        onClick={() => document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' })}
+                      >
+                        Проверить мою рекламу
+                        <Icon name="ArrowRight" className="ml-2" size={20} />
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </CardContent>
