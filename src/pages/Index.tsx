@@ -143,13 +143,25 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">
             Каких результатов позволяет достичь мой подход
           </h2>
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <p className="text-white/90 text-lg mb-2">
               С 2020 года сотрудничаю с ИП Таболкин Алексей Станиславович г. Санкт-Петербург.
             </p>
             <p className="text-white/90 text-lg">
               Рекламные показатели за последние 365 дней:
             </p>
+          </div>
+
+          <div className="mb-8 max-w-5xl mx-auto">
+            <Card className="border-none shadow-2xl overflow-hidden">
+              <CardContent className="p-0">
+                <img 
+                  src="https://cdn.poehali.dev/files/3145a0e7-25b9-47b2-b4d1-1603a9419306.png" 
+                  alt="Статистика рекламных кампаний в Яндекс.Директ"
+                  className="w-full h-auto"
+                />
+              </CardContent>
+            </Card>
           </div>
           
           <div className="grid md:grid-cols-3 gap-6 mb-8">
