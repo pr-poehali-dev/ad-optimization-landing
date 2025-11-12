@@ -286,8 +286,19 @@ const Index = () => {
                       <img 
                         src="https://cdn.poehali.dev/files/13ba27dd-68f3-4435-8809-708fb70bff68.png" 
                         alt="Совершенно нерелевантное объявление"
-                        className="w-full h-auto rounded-lg shadow-md"
+                        className="w-full h-auto rounded-lg shadow-md mb-4"
                       />
+                      <p className="text-sm mb-4">
+                        Переходя по ссылке, посетители попадают на главную страницу сайта.
+                      </p>
+                      <img 
+                        src="https://cdn.poehali.dev/files/1503d4f9-cc66-44b8-9f3b-fef029a0f991.png" 
+                        alt="Главная страница вместо карточки товара"
+                        className="w-full h-auto rounded-lg shadow-md mb-4"
+                      />
+                      <p className="text-sm font-semibold text-destructive">
+                        Грустно смотреть на такую рекламу. Ни на одном шаге нет релевантности.
+                      </p>
                     </div>
                   </div>
                 </div>
