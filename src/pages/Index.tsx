@@ -90,14 +90,30 @@ const Index = () => {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Вы владелец интернет-магазина</h3>
                     <p className="text-muted-foreground">
-                      Не имеет значения, что именно вы продаете. Основные ошибки в большинстве случаев одинаковы.
+                      У вас уже есть продажи на сайте от СЕО и прямого трафика. Вы хотите получить дополнительные продажи привлекая рекламный трафик. Не имеет значения, что именно вы продаете. Основные нюансы при работе с рекламой для ИМ одинаковы.
                     </p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-accent transition-all duration-300 hover:shadow-xl">
+            <Card className="border-2 hover:border-accent transition-all duration-300 hover:shadow-xl md:order-first">
+              <CardContent className="p-8">
+                <div className="flex items-start mb-4">
+                  <div className="bg-accent/10 p-3 rounded-lg mr-4">
+                    <Icon name="Target" size={32} className="text-accent" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">Вы рекламируетесь в Яндекс Директ</h3>
+                    <p className="text-muted-foreground">
+                      Это может быть любая реклама: поиск, товарная галерея, РСЯ. Рекламный бюджет от 40000 рублей в месяц с НДС.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-accent transition-all duration-300 hover:shadow-xl md:col-span-2 md:max-w-2xl md:mx-auto">
               <CardContent className="p-8">
                 <div className="flex items-start mb-4">
                   <div className="bg-accent/10 p-3 rounded-lg mr-4">
@@ -106,7 +122,7 @@ const Index = () => {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Вас не устраивают результаты</h3>
                     <p className="text-muted-foreground">
-                      Мало заказов с сайта, они дорогие, посетители заходят, гуляют по сайту, но ничего не покупают.
+                      Реклама не окупается. Мало заказов с рекламы, они дорогие. Увеличение бюджета не приводит к росту количества заказов.
                     </p>
                   </div>
                 </div>
