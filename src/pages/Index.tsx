@@ -112,10 +112,17 @@ const Index = () => {
           <Card className="border-none shadow-2xl">
             <CardContent className="p-8 md:p-12">
               <div className="grid md:grid-cols-3 gap-8">
-                <div className="md:col-span-1 flex justify-center items-start">
-                  <div className="w-48 h-48 rounded-2xl bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center">
-                    <Icon name="User" size={80} className="text-primary" />
-                  </div>
+                <div className="md:col-span-1 flex justify-center items-start md:sticky md:top-24 md:self-start">
+                  <img 
+                    src="https://cdn.poehali.dev/files/20201996-d9b9-4939-9206-0d2d254c1d23.JPG" 
+                    alt="Семья"
+                    className="w-full rounded-2xl shadow-lg block md:hidden"
+                  />
+                  <img 
+                    src="https://cdn.poehali.dev/files/7c7a7df3-bdbd-4ee3-8fea-2927216c0e54.jpg" 
+                    alt="Семья"
+                    className="w-full rounded-2xl shadow-lg hidden md:block"
+                  />
                 </div>
                 <div className="md:col-span-2">
                   <h3 className="text-2xl font-bold mb-4">Цыбуля Алексей</h3>
