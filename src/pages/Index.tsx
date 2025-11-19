@@ -81,7 +81,7 @@ const Index = () => {
             Для кого этот материал
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-2 hover:border-accent transition-all duration-300 hover:shadow-xl md:order-1">
+            <Card className="border-2 hover:border-accent transition-all duration-300 hover:shadow-xl">
               <CardContent className="p-8">
                 <div className="mb-4">
                   <div className="flex items-start mb-4">
@@ -97,15 +97,15 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-accent transition-all duration-300 hover:shadow-xl md:order-0">
+            <Card className="border-2 hover:border-accent transition-all duration-300 hover:shadow-xl">
               <CardContent className="p-8">
                 <div className="mb-4">
                   <div className="flex items-start mb-4">
                     <div className="bg-yellow-400/10 p-3 rounded-lg mr-4 flex-shrink-0">
                       <img 
-                        src="https://yastatic.net/s3/home/logos/services/direct.png" 
+                        src="https://cdn.poehali.dev/files/24086abc-2f42-4216-9eb2-a089f0ddcf6b.jpg" 
                         alt="Яндекс Директ" 
-                        className="w-8 h-8"
+                        className="w-8 h-8 rounded-full"
                       />
                     </div>
                     <h3 className="text-xl font-semibold">Вы рекламируетесь в Яндекс Директ</h3>
