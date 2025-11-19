@@ -81,50 +81,54 @@ const Index = () => {
             Для кого этот материал
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-2 hover:border-accent transition-all duration-300 hover:shadow-xl">
+            <Card className="border-2 hover:border-accent transition-all duration-300 hover:shadow-xl md:order-1">
               <CardContent className="p-8">
-                <div className="flex items-start mb-4">
-                  <div className="bg-accent/10 p-3 rounded-lg mr-4">
-                    <Icon name="Store" size={32} className="text-accent" />
+                <div className="mb-4">
+                  <div className="flex items-start mb-4">
+                    <div className="bg-accent/10 p-3 rounded-lg mr-4 flex-shrink-0">
+                      <Icon name="Store" size={32} className="text-accent" />
+                    </div>
+                    <h3 className="text-xl font-semibold">Вы владелец интернет-магазина</h3>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2">Вы владелец интернет-магазина</h3>
-                    <p className="text-muted-foreground">
-                      У вас уже есть продажи на сайте от СЕО и прямого трафика. Вы хотите получить дополнительные продажи привлекая рекламный трафик. Не имеет значения, что именно вы продаете. Основные нюансы при работе с рекламой для ИМ одинаковы.
-                    </p>
-                  </div>
+                  <p className="text-muted-foreground">
+                    У вас уже есть продажи на сайте от СЕО и прямого трафика. Вы хотите получить дополнительные продажи привлекая рекламный трафик. Не имеет значения, что именно вы продаете. Основные нюансы при работе с рекламой для ИМ одинаковы.
+                  </p>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-accent transition-all duration-300 hover:shadow-xl md:order-first">
+            <Card className="border-2 hover:border-accent transition-all duration-300 hover:shadow-xl md:order-0">
               <CardContent className="p-8">
-                <div className="flex items-start mb-4">
-                  <div className="bg-accent/10 p-3 rounded-lg mr-4">
-                    <Icon name="Target" size={32} className="text-accent" />
+                <div className="mb-4">
+                  <div className="flex items-start mb-4">
+                    <div className="bg-yellow-400/10 p-3 rounded-lg mr-4 flex-shrink-0">
+                      <img 
+                        src="https://yastatic.net/s3/home/logos/services/direct.png" 
+                        alt="Яндекс Директ" 
+                        className="w-8 h-8"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold">Вы рекламируетесь в Яндекс Директ</h3>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2">Вы рекламируетесь в Яндекс Директ</h3>
-                    <p className="text-muted-foreground">
-                      Это может быть любая реклама: поиск, товарная галерея, РСЯ. Рекламный бюджет от 40000 рублей в месяц с НДС.
-                    </p>
-                  </div>
+                  <p className="text-muted-foreground">
+                    Это может быть любая реклама: поиск, товарная галерея, РСЯ. Рекламный бюджет от 40000 рублей в месяц с НДС.
+                  </p>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-accent transition-all duration-300 hover:shadow-xl md:col-span-2 md:max-w-2xl md:mx-auto">
+            <Card className="border-2 hover:border-accent transition-all duration-300 hover:shadow-xl md:col-span-2 md:max-w-2xl md:mx-auto md:order-2">
               <CardContent className="p-8">
-                <div className="flex items-start mb-4">
-                  <div className="bg-accent/10 p-3 rounded-lg mr-4">
-                    <Icon name="TrendingDown" size={32} className="text-destructive" />
+                <div className="mb-4">
+                  <div className="flex items-start mb-4">
+                    <div className="bg-accent/10 p-3 rounded-lg mr-4 flex-shrink-0">
+                      <Icon name="TrendingDown" size={32} className="text-destructive" />
+                    </div>
+                    <h3 className="text-xl font-semibold">Вас не устраивают результаты</h3>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2">Вас не устраивают результаты</h3>
-                    <p className="text-muted-foreground">
-                      Реклама не окупается. Мало заказов с рекламы, они дорогие. Увеличение бюджета не приводит к росту количества заказов.
-                    </p>
-                  </div>
+                  <p className="text-muted-foreground">
+                    Реклама не окупается. Мало заказов с рекламы, они дорогие. Увеличение бюджета не приводит к росту количества заказов.
+                  </p>
                 </div>
               </CardContent>
             </Card>
