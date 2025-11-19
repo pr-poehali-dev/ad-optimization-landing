@@ -9,6 +9,18 @@ import { useToast } from '@/hooks/use-toast';
 
 const Index = () => {
   const { toast } = useToast();
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+  const [modalImageSrc, setModalImageSrc] = useState('');
+
+  const openImageModal = (src: string) => {
+    setModalImageSrc(src);
+    setIsImageModalOpen(true);
+  };
+
+  const closeImageModal = () => {
+    setIsImageModalOpen(false);
+    setModalImageSrc('');
+  };
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -116,16 +128,18 @@ const Index = () => {
                   <img 
                     src="https://cdn.poehali.dev/files/20201996-d9b9-4939-9206-0d2d254c1d23.JPG" 
                     alt="Семья"
-                    className="w-full rounded-2xl shadow-lg block md:hidden"
+                    onClick={() => openImageModal('https://cdn.poehali.dev/files/20201996-d9b9-4939-9206-0d2d254c1d23.JPG')}
+                    className="w-full rounded-2xl shadow-lg block md:hidden cursor-pointer transition-transform active:scale-95"
                   />
                   <img 
-                    src="https://cdn.poehali.dev/files/7c7a7df3-bdbd-4ee3-8fea-2927216c0e54.jpg" 
+                    src="https://cdn.poehali.dev/files/0c0c8a6a-bf06-4b24-8e30-9905c84a5dac.jpg" 
                     alt="Семья"
-                    className="w-full rounded-2xl shadow-lg hidden md:block"
+                    onClick={() => openImageModal('https://cdn.poehali.dev/files/0c0c8a6a-bf06-4b24-8e30-9905c84a5dac.jpg')}
+                    className="w-full rounded-2xl shadow-lg hidden md:block cursor-pointer transition-transform hover:scale-105"
                   />
                 </div>
                 <div className="md:col-span-2">
-                  <h3 className="text-2xl font-bold mb-4">Цыбуля Алексей</h3>
+                  <h3 className="text-2xl font-bold mb-4">Меня зовут Цыбуля Алексей</h3>
                   <div className="space-y-4 text-muted-foreground">
                     <p>Живу в Ижевске, женат есть двое сыновей.</p>
                     <p>
@@ -697,6 +711,29 @@ const Index = () => {
           </p>
         </div>
       </footer>
+
+      {isImageModalOpen && (
+        <div 
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 cursor-pointer"
+          onClick={closeImageModal}
+        >
+          <div className="relative max-w-7xl max-h-full">
+            <button
+              onClick={closeImageModal}
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
+              aria-label="Закрыть"
+            >
+              <Icon name="X" size={32} />
+            </button>
+            <img 
+              src={modalImageSrc} 
+              alt="Семья" 
+              className="max-w-full max-h-[90vh] object-contain rounded-lg"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
