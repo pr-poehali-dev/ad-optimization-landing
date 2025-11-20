@@ -416,60 +416,73 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-gradient-to-b from-muted/30 to-white">
+      <section className="py-16 px-4 bg-accent/5">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-primary">
             Что нужно делать, чтобы избежать этой ошибки?
           </h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg max-w-3xl mx-auto">
+            Во-первых, проверить какие объявления и по каким поисковым запросам показываются у вас. Зайдите в рекламный кабинет и проанализируйте каждую группу.
+          </p>
 
-          <div className="space-y-6 mb-12">
-            <p className="text-lg text-muted-foreground">
-              Во-первых, проверить какие объявления и по каким поисковым запросам показываются у вас. Зайдите в рекламный кабинет и проанализируйте каждую группу.
-            </p>
+          <div className="space-y-8">
+            <Card className="border-2 border-accent/20 hover:border-accent/50 transition-all duration-300 shadow-lg">
+              <CardContent className="p-8">
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <img 
+                    src="https://cdn.poehali.dev/files/797a5c1c-c148-4537-b9f8-c32a42209a48.png"
+                    alt="Статистика рекламной кампании в Яндекс Директ"
+                    onClick={() => openImageModal('https://cdn.poehali.dev/files/797a5c1c-c148-4537-b9f8-c32a42209a48.png')}
+                    className="w-full rounded-lg shadow-md cursor-pointer transition-transform hover:scale-105"
+                  />
+                  <img 
+                    src="https://cdn.poehali.dev/files/0a19f3ae-a12b-440a-859d-5faea94e1f20.png"
+                    alt="Мастер отчетов - Поисковые запросы"
+                    onClick={() => openImageModal('https://cdn.poehali.dev/files/0a19f3ae-a12b-440a-859d-5faea94e1f20.png')}
+                    className="w-full rounded-lg shadow-md cursor-pointer transition-transform hover:scale-105"
+                  />
+                </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              <img 
-                src="https://cdn.poehali.dev/files/797a5c1c-c148-4537-b9f8-c32a42209a48.png"
-                alt="Статистика рекламной кампании в Яндекс Директ"
-                onClick={() => openImageModal('https://cdn.poehali.dev/files/797a5c1c-c148-4537-b9f8-c32a42209a48.png')}
-                className="w-full rounded-lg shadow-lg cursor-pointer transition-transform hover:scale-105"
-              />
-              <img 
-                src="https://cdn.poehali.dev/files/0a19f3ae-a12b-440a-859d-5faea94e1f20.png"
-                alt="Мастер отчетов - Поисковые запросы"
-                onClick={() => openImageModal('https://cdn.poehali.dev/files/0a19f3ae-a12b-440a-859d-5faea94e1f20.png')}
-                className="w-full rounded-lg shadow-lg cursor-pointer transition-transform hover:scale-105"
-              />
-            </div>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    Наверняка у вас на сайте несколько категорий товаров, а возможно десятки категорий. В каждой категории множество товаров. По итогу в интернет-магазине могут быть тысячи товаров.
+                  </p>
 
-            <p className="text-lg text-muted-foreground">
-              Наверняка у вас на сайте несколько категорий товаров, а возможно десятки категорий. В каждой категории множество товаров. По итогу в интернет-магазине могут быть тысячи товаров.
-            </p>
+                  <p>
+                    Если в вашем интернет-магазине сотни или тысячи товаров, то собирать ключи, делать объявления под каждый товар невыполнимая задача.
+                  </p>
 
-            <p className="text-lg text-muted-foreground">
-              Если в вашем интернет-магазине сотни или тысячи товаров, то собирать ключи, делать объявления под каждый товар невыполнимая задача.
-            </p>
+                  <p>
+                    Я советую делать проще – создать рекламную кампанию по товарному фиду с вашего сайта. В фид выгружается вся необходимая информация о каждом товаре: урл, изображение, цена, название, описание, производитель, характеристики, опции. Директ сформирует объявление под каждый товар. В каждом таком объявлении будет заголовок в точности соответствовать товару, ссылка будет вести в карточку именно этого товара. Автотаргетинг точно подбирает поисковые запросы под каждый товар. В итоге получается максимально точная связка: запрос – объявление – карточка товара.
+                  </p>
 
-            <p className="text-lg text-muted-foreground">
-              Я советую делать проще – создать рекламную кампанию по товарному фиду с вашего сайта. В фид выгружается вся необходимая информация о каждом товаре: урл, изображение, цена, название, описание, производитель, характеристики, опции. Директ сформирует объявление под каждый товар. В каждом таком объявлении будет заголовок в точности соответствовать товару, ссылка будет вести в карточку именно этого товара. Автотаргетинг точно подбирает поисковые запросы под каждый товар. В итоге получается максимально точная связка: запрос – объявление – карточка товара.
-            </p>
+                  <p className="font-semibold text-foreground">
+                    На скрине ниже пример такой связки. Отчет из «мастера отчетов» директ. Первая колонка запрос, который вводили пользователи, вторая колонка заголовок показанного объявления, третья колонка ссылка на карточку товара в объявлении.
+                  </p>
 
-            <p className="text-lg text-muted-foreground mb-6">
-              На скрине ниже пример такой связки. Отчет из «мастера отчетов» директ. Первая колонка запрос, который вводили пользователи, вторая колонка заголовок показанного объявления, третья колонка ссылка на карточку товара в объявлении.
-            </p>
+                  <img 
+                    src="https://cdn.poehali.dev/files/a4a22e8e-a48c-4146-91ec-55ad4a98014b.png"
+                    alt="Мастер отчетов. Запросы - связка запрос-объявление-товар"
+                    onClick={() => openImageModal('https://cdn.poehali.dev/files/a4a22e8e-a48c-4146-91ec-55ad4a98014b.png')}
+                    className="w-full rounded-lg shadow-md cursor-pointer transition-transform hover:scale-105"
+                  />
+                </div>
 
-            <img 
-              src="https://cdn.poehali.dev/files/a4a22e8e-a48c-4146-91ec-55ad4a98014b.png"
-              alt="Мастер отчетов. Запросы - связка запрос-объявление-товар"
-              onClick={() => openImageModal('https://cdn.poehali.dev/files/a4a22e8e-a48c-4146-91ec-55ad4a98014b.png')}
-              className="w-full rounded-lg shadow-lg cursor-pointer transition-transform hover:scale-105 mb-6"
-            />
-
-            <Card className="bg-accent/10 border-accent/30">
-              <CardContent className="p-6">
-                <p className="text-lg font-semibold text-foreground">
-                  Проработайте этот момент, и посетители будут дольше задерживаться на вашем сайте, а число заказов возрастет, ведь вы будете предлагать именно то, что они ищут, а это напрямую влияет на количество денег в кассе.
-                </p>
+                <div className="mt-6 p-6 bg-accent/10 rounded-lg border-2 border-accent/20">
+                  <p className="text-lg font-semibold text-primary text-center mb-4">
+                    Проработайте этот момент, и посетители будут дольше задерживаться на вашем сайте, а число заказов возрастет, ведь вы будете предлагать именно то, что они ищут, а это напрямую влияет на количество денег в кассе.
+                  </p>
+                  <div className="flex justify-center">
+                    <Button 
+                      size="lg"
+                      className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-6 rounded-xl shadow-lg hover:scale-105 transition-all duration-300"
+                      onClick={() => document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' })}
+                    >
+                      Получить аудит моей рекламы
+                      <Icon name="ArrowRight" className="ml-2" size={20} />
+                    </Button>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
