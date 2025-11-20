@@ -259,6 +259,29 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-16 px-4 bg-muted/50">
+        <div className="max-w-4xl mx-auto">
+          <Card className="border-2 border-accent/20 shadow-xl">
+            <CardContent className="p-8">
+              <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-primary">
+                Отзыв клиента
+              </h2>
+              <p className="text-center text-muted-foreground mb-8 text-lg">
+                На скрине ниже благодарность от ИП Таболкина.
+              </p>
+              <div className="flex justify-center">
+                <img 
+                  src="https://cdn.poehali.dev/files/2c1908eb-96fc-48e9-8655-6560dd05b26f.png"
+                  alt="Благодарственное письмо от ИП Таболкина Алексея Станиславовича"
+                  onClick={() => openImageModal('https://cdn.poehali.dev/files/2c1908eb-96fc-48e9-8655-6560dd05b26f.png')}
+                  className="w-full max-w-2xl rounded-lg shadow-lg cursor-pointer transition-transform hover:scale-105"
+                />
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-primary">
