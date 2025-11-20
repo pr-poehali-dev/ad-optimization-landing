@@ -285,10 +285,10 @@ const Index = () => {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-primary">
-            Три критические ошибки, которые лишают ваш интернет-магазин продаж
+            Критическая ошибка, которая лишает ваш интернет-магазин продаж
           </h2>
           <p className="text-center text-muted-foreground mb-12 text-lg max-w-3xl mx-auto">
-            Большинство игнорирует эти условия, вместо этого бесконечно меняют подрядчиков по рекламе. 
+            Большинство игнорирует это условие, вместо этого бесконечно меняет подрядчиков по рекламе. 
             Хотя достаточно потратить пару вечеров и посетители начнут охотнее оставлять заявки.
           </p>
 
@@ -411,98 +411,68 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-destructive/20 hover:border-destructive/50 transition-all duration-300 shadow-lg">
-              <CardContent className="p-8">
-                <div className="flex items-start mb-6">
-                  <div className="bg-destructive/10 p-4 rounded-xl mr-6">
-                    <Icon name="XCircle" size={40} className="text-destructive" />
-                  </div>
-                  <div>
-                    <Badge className="mb-3 bg-destructive text-white">Ошибка #2</Badge>
-                    <h3 className="text-2xl font-bold mb-2">Устаревшая структура рекламы</h3>
-                    <p className="text-muted-foreground">
-                      Яндекс Директ постоянно развивается, а рекламные кампании настроены один раз и больше не обновляются.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
 
-            <Card className="border-2 border-destructive/20 hover:border-destructive/50 transition-all duration-300 shadow-lg">
-              <CardContent className="p-8">
-                <div className="flex items-start mb-6">
-                  <div className="bg-destructive/10 p-4 rounded-xl mr-6">
-                    <Icon name="Ban" size={40} className="text-destructive" />
-                  </div>
-                  <div>
-                    <Badge className="mb-3 bg-destructive text-white">Ошибка #3</Badge>
-                    <h3 className="text-2xl font-bold mb-2">Нет системы возврата клиентов</h3>
-                    <p className="text-muted-foreground">
-                      На принятие решения о покупке уходит в среднем 21 день. Если не напоминать клиенту о себе — он выберет конкурента.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
 
       <section className="py-16 px-4 bg-gradient-to-b from-muted/30 to-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-primary">
-            Условие первое - Релевантность
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
+            Что нужно делать, чтобы избежать этой ошибки?
           </h2>
-          <p className="text-center text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Когда человек ищет товар в поиске, ему должно показываться объявление именно этого товара. 
-            При переходе посетитель должен попасть в карточку этого товара.
-          </p>
 
           <div className="space-y-6 mb-12">
-            <Card className="border-l-4 border-l-destructive">
-              <CardContent className="p-6">
-                <div className="flex items-start">
-                  <Icon name="ThumbsDown" className="text-destructive mr-4 mt-1" size={24} />
-                  <div>
-                    <h4 className="font-bold text-lg mb-2 text-destructive">❌ Плохой пример</h4>
-                    <p className="text-muted-foreground mb-2">Запрос: "Драйвер шагового серво-двигателя HBS57H"</p>
-                    <p className="text-sm">Объявление говорит о другой модели, ссылка ведет не в карточку искомого товара.</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            <p className="text-lg text-muted-foreground">
+              Во-первых, проверить какие объявления и по каким поисковым запросам показываются у вас. Зайдите в рекламный кабинет и проанализируйте каждую группу.
+            </p>
 
-            <Card className="border-l-4 border-l-accent">
+            <div className="grid md:grid-cols-2 gap-6">
+              <img 
+                src="https://cdn.poehali.dev/files/797a5c1c-c148-4537-b9f8-c32a42209a48.png"
+                alt="Статистика рекламной кампании в Яндекс Директ"
+                onClick={() => openImageModal('https://cdn.poehali.dev/files/797a5c1c-c148-4537-b9f8-c32a42209a48.png')}
+                className="w-full rounded-lg shadow-lg cursor-pointer transition-transform hover:scale-105"
+              />
+              <img 
+                src="https://cdn.poehali.dev/files/0a19f3ae-a12b-440a-859d-5faea94e1f20.png"
+                alt="Мастер отчетов - Поисковые запросы"
+                onClick={() => openImageModal('https://cdn.poehali.dev/files/0a19f3ae-a12b-440a-859d-5faea94e1f20.png')}
+                className="w-full rounded-lg shadow-lg cursor-pointer transition-transform hover:scale-105"
+              />
+            </div>
+
+            <p className="text-lg text-muted-foreground">
+              Наверняка у вас на сайте несколько категорий товаров, а возможно десятки категорий. В каждой категории множество товаров. По итогу в интернет-магазине могут быть тысячи товаров.
+            </p>
+
+            <p className="text-lg text-muted-foreground">
+              Если в вашем интернет-магазине сотни или тысячи товаров, то собирать ключи, делать объявления под каждый товар невыполнимая задача.
+            </p>
+
+            <p className="text-lg text-muted-foreground">
+              Я советую делать проще – создать рекламную кампанию по товарному фиду с вашего сайта. В фид выгружается вся необходимая информация о каждом товаре: урл, изображение, цена, название, описание, производитель, характеристики, опции. Директ сформирует объявление под каждый товар. В каждом таком объявлении будет заголовок в точности соответствовать товару, ссылка будет вести в карточку именно этого товара. Автотаргетинг точно подбирает поисковые запросы под каждый товар. В итоге получается максимально точная связка: запрос – объявление – карточка товара.
+            </p>
+
+            <p className="text-lg text-muted-foreground mb-6">
+              На скрине ниже пример такой связки. Отчет из «мастера отчетов» директ. Первая колонка запрос, который вводили пользователи, вторая колонка заголовок показанного объявления, третья колонка ссылка на карточку товара в объявлении.
+            </p>
+
+            <img 
+              src="https://cdn.poehali.dev/files/a4a22e8e-a48c-4146-91ec-55ad4a98014b.png"
+              alt="Мастер отчетов. Запросы - связка запрос-объявление-товар"
+              onClick={() => openImageModal('https://cdn.poehali.dev/files/a4a22e8e-a48c-4146-91ec-55ad4a98014b.png')}
+              className="w-full rounded-lg shadow-lg cursor-pointer transition-transform hover:scale-105 mb-6"
+            />
+
+            <Card className="bg-accent/10 border-accent/30">
               <CardContent className="p-6">
-                <div className="flex items-start">
-                  <Icon name="ThumbsUp" className="text-accent mr-4 mt-1" size={24} />
-                  <div>
-                    <h4 className="font-bold text-lg mb-2 text-accent">✅ Правильный пример</h4>
-                    <p className="text-muted-foreground mb-2">Заголовок полностью повторяет запрос</p>
-                    <p className="text-sm">Ссылка ведет в карточку именно искомого товара. Конверсия выше 5%!</p>
-                  </div>
-                </div>
+                <p className="text-lg font-semibold text-foreground">
+                  Проработайте этот момент, и посетители будут дольше задерживаться на вашем сайте, а число заказов возрастет, ведь вы будете предлагать именно то, что они ищут, а это напрямую влияет на количество денег в кассе.
+                </p>
               </CardContent>
             </Card>
           </div>
-
-          <Card className="bg-accent/5 border-accent/20">
-            <CardContent className="p-8">
-              <h3 className="text-xl font-bold mb-4 flex items-center">
-                <Icon name="Lightbulb" className="text-accent mr-3" size={28} />
-                Решение
-              </h3>
-              <p className="text-muted-foreground mb-4">
-                Создать рекламную кампанию по товарному фиду с вашего сайта. Директ автоматически сформирует 
-                объявление под каждый товар с точным соответствием: запрос – объявление – карточка товара.
-              </p>
-              <div className="bg-white p-4 rounded-lg border">
-                <p className="text-sm font-mono text-muted-foreground">
-                  Автотаргетинг + товарный фид = максимальная релевантность для каждого запроса
-                </p>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </section>
 
