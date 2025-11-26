@@ -676,7 +676,7 @@ const Index = () => {
                   <div className="bg-accent/10 p-2 rounded-lg mr-3">
                     <Icon name="ThumbsUp" size={28} className="text-accent" />
                   </div>
-                  <h4 className="text-xl font-bold">Вариант 1</h4>
+                  <h4 className="text-xl font-bold">Первая</h4>
                 </div>
                 <p className="text-muted-foreground">
                   Вам понравится план, но вы решите внедрять его самостоятельно. Отлично, буду рад отзыву.
@@ -690,7 +690,7 @@ const Index = () => {
                   <div className="bg-primary/10 p-2 rounded-lg mr-3">
                     <Icon name="Handshake" size={28} className="text-primary" />
                   </div>
-                  <h4 className="text-xl font-bold">Вариант 2</h4>
+                  <h4 className="text-xl font-bold">Вторая</h4>
                 </div>
                 <p className="text-muted-foreground">
                   Вы захотите, чтобы я поработал с вами лично. Это возможно в двух форматах работы:
@@ -704,7 +704,7 @@ const Index = () => {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-primary">
-            Варианты работы
+            Форматы работы
           </h2>
           <p className="text-center text-muted-foreground mb-12 text-lg">
             Я бесплатно проведу анализ вашей ситуации и создам индивидуальный план масштабирования
