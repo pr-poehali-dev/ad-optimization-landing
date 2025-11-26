@@ -611,6 +611,96 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-16 px-4 bg-gradient-to-b from-white to-muted/20">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-primary">
+            Почему я делаю это бесплатно?
+          </h2>
+          
+          <div className="space-y-6 text-lg text-muted-foreground mb-12">
+            <p className="text-center">
+              Я знаю, что определённый процент людей, для которых я это сделаю, захотят продолжить сотрудничество.
+            </p>
+            <p className="text-center">
+              Вместо попыток убедить вас, как прекрасно со мной работать, я обнаружил, что гораздо эффективнее показать свою способность оказать реальную помощь.
+            </p>
+          </div>
+
+          <Card className="border-2 border-primary/20 shadow-lg mb-8">
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-bold mb-6 text-center text-primary">
+                Вот как мы это сделаем
+              </h3>
+              
+              <div className="space-y-6">
+                <div className="flex items-start">
+                  <div className="bg-primary/10 p-3 rounded-lg mr-4 flex-shrink-0">
+                    <Icon name="Search" size={24} className="text-primary" />
+                  </div>
+                  <p className="text-muted-foreground pt-2">
+                    Я выделю время, чтобы изучить именно ваши навыки, идеи и опыт.
+                  </p>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="bg-primary/10 p-3 rounded-lg mr-4 flex-shrink-0">
+                    <Icon name="Target" size={24} className="text-primary" />
+                  </div>
+                  <p className="text-muted-foreground pt-2">
+                    Затем мы вместе определим ваши цели, необходимые рекламные инструменты.
+                  </p>
+                </div>
+
+                <div className="flex items-start">
+                  <div className="bg-primary/10 p-3 rounded-lg mr-4 flex-shrink-0">
+                    <Icon name="FileText" size={24} className="text-primary" />
+                  </div>
+                  <p className="text-muted-foreground pt-2">
+                    Исходя из того, что вы расскажете, я бесплатно разработаю схему именно под вашу ситуацию.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <div className="text-center mb-8">
+            <p className="text-xl font-semibold text-primary mb-6">
+              После этого произойдет одна из двух вещей:
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <Card className="border-2 border-accent/30 hover:border-accent transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="bg-accent/10 p-2 rounded-lg mr-3">
+                    <Icon name="ThumbsUp" size={28} className="text-accent" />
+                  </div>
+                  <h4 className="text-xl font-bold">Вариант 1</h4>
+                </div>
+                <p className="text-muted-foreground">
+                  Вам понравится план, но вы решите внедрять его самостоятельно. Отлично, буду рад отзыву.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-primary/30 hover:border-primary transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="bg-primary/10 p-2 rounded-lg mr-3">
+                    <Icon name="Handshake" size={28} className="text-primary" />
+                  </div>
+                  <h4 className="text-xl font-bold">Вариант 2</h4>
+                </div>
+                <p className="text-muted-foreground">
+                  Вы захотите, чтобы я поработал с вами лично. Это возможно в двух форматах работы:
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-primary">
