@@ -573,7 +573,7 @@ const Index = () => {
               <h3 className="text-2xl font-bold mb-6 text-center">
                 Что даст вам внедрение моих методов?
               </h3>
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="grid md:grid-cols-2 gap-6">
                 {[
                   { icon: 'Calendar', text: 'Возможность вести бизнес без необходимости бросать семью и жить на работе' },
                   { icon: 'TrendingUp', text: 'Регулярное поступление денег в кассу без увеличения рекламного бюджета' },
@@ -590,11 +590,12 @@ const Index = () => {
                   </div>
                 ))}
               </div>
-              <p className="text-lg text-muted-foreground text-center mt-6">
-                Последние пять лет я оттачивал методы продвижения интернет-магазинов и готов помочь применить их в вашем проекте.
-              </p>
             </CardContent>
           </Card>
+
+          <p className="text-lg text-muted-foreground text-center mt-8">
+            Последние пять лет я оттачивал методы продвижения интернет-магазинов и готов помочь применить их в вашем проекте.
+          </p>
         </div>
       </section>
 
