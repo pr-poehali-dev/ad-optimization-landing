@@ -593,9 +593,20 @@ const Index = () => {
             </CardContent>
           </Card>
 
-          <p className="text-lg text-muted-foreground text-center mt-8">
+          <p className="text-lg text-muted-foreground text-center mt-8 mb-8">
             Последние пять лет я оттачивал методы продвижения интернет-магазинов и готов помочь применить их в вашем проекте.
           </p>
+
+          <div className="flex justify-center">
+            <Button 
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-white font-semibold px-12 py-6 rounded-xl shadow-xl hover:scale-105 transition-all duration-300 text-lg"
+              onClick={() => document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Получить бесплатную консультацию
+              <Icon name="ArrowRight" className="ml-2" size={24} />
+            </Button>
+          </div>
         </div>
       </section>
 
