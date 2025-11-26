@@ -520,7 +520,16 @@ const Index = () => {
                   </p>
                 </div>
 
-                <div className="mt-8 grid md:grid-cols-2 gap-6">
+                <div className="mt-8 mb-8">
+                  <img 
+                    src="https://cdn.poehali.dev/files/57fba617-4b09-443b-ac2a-7eafc7346db5.png"
+                    alt="График роста конверсии в Яндекс Метрике"
+                    onClick={() => openImageModal('https://cdn.poehali.dev/files/57fba617-4b09-443b-ac2a-7eafc7346db5.png')}
+                    className="w-full rounded-lg shadow-md cursor-pointer transition-transform hover:scale-105"
+                  />
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6">
                   <div className="p-6 bg-destructive/5 rounded-lg border-2 border-destructive/20">
                     <div className="text-center">
                       <p className="text-sm text-muted-foreground mb-2">Было</p>
