@@ -21,6 +21,7 @@ const Index = () => {
     setIsImageModalOpen(false);
     setModalImageSrc('');
   };
+
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
