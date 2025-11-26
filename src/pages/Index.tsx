@@ -566,9 +566,6 @@ const Index = () => {
             <p className="text-xl text-muted-foreground mb-4">
               Хотите, чтобы я бесплатно помог вам разработать план привлечения клиентов, который будет работать в 2-3 раза эффективнее, по сравнению с текущей ситуацией?
             </p>
-            <p className="text-lg text-muted-foreground">
-              Последние пять лет я оттачивал методы продвижения интернет-магазинов и готов помочь применить их в вашем проекте.
-            </p>
           </div>
 
           <Card className="border-2 border-accent shadow-2xl">
@@ -576,7 +573,7 @@ const Index = () => {
               <h3 className="text-2xl font-bold mb-6 text-center">
                 Что даст вам внедрение моих методов?
               </h3>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
                 {[
                   { icon: 'Calendar', text: 'Возможность вести бизнес без необходимости бросать семью и жить на работе' },
                   { icon: 'TrendingUp', text: 'Регулярное поступление денег в кассу без увеличения рекламного бюджета' },
@@ -593,6 +590,9 @@ const Index = () => {
                   </div>
                 ))}
               </div>
+              <p className="text-lg text-muted-foreground text-center mt-6">
+                Последние пять лет я оттачивал методы продвижения интернет-магазинов и готов помочь применить их в вашем проекте.
+              </p>
             </CardContent>
           </Card>
         </div>
