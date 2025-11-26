@@ -560,8 +560,14 @@ const Index = () => {
             <p className="text-xl text-muted-foreground mb-4">
               Вы тоже устали вести на сайт сотни людей, зная, что большинство из них никогда не оформит заказ?
             </p>
-            <p className="text-2xl font-semibold text-primary">
+            <p className="text-2xl font-semibold text-primary mb-6">
               Какая сейчас у вас конверсия? 0.1% или еще ниже?
+            </p>
+            <p className="text-xl text-muted-foreground mb-4">
+              Хотите, чтобы я бесплатно помог вам разработать план привлечения клиентов, который будет работать в 2-3 раза эффективнее, по сравнению с текущей ситуацией?
+            </p>
+            <p className="text-lg text-muted-foreground">
+              Последние пять лет я оттачивал методы продвижения интернет-магазинов и готов помочь применить их в вашем проекте.
             </p>
           </div>
 
