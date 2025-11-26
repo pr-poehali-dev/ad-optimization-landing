@@ -489,6 +489,59 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-primary">
+            Релевантность в деле
+          </h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg max-w-3xl mx-auto">
+            Вот как отражается на статистике тот самый комплексный подход, где под каждый запрос пользователя автоматически формируется объявление, с релевантным заголовком, описанием, изображением, ссылкой.
+          </p>
+
+          <div className="space-y-8">
+            <Card className="border-2 border-primary/20 hover:border-primary/50 transition-all duration-300 shadow-lg">
+              <CardContent className="p-8">
+                <div className="flex items-start mb-6">
+                  <div className="bg-primary/10 p-4 rounded-xl mr-6">
+                    <Icon name="TrendingUp" size={40} className="text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <Badge className="mb-3 bg-primary text-white">Результат</Badge>
+                    <h3 className="text-2xl font-bold mb-2">Рост конверсии на +900%</h3>
+                    <p className="text-muted-foreground">
+                      На большой дистанции получается внушительные результат в виде роста процента конверсии рекламного трафика.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-4 text-muted-foreground">
+                  <p className="text-lg">
+                    В первые два года работы над интернет-магазином удалось вырастить конверсию рекламного трафика <span className="font-bold text-primary">с 0.1% до 1%</span> это <span className="font-bold text-primary text-2xl">+900%!!!</span>
+                  </p>
+                </div>
+
+                <div className="mt-8 grid md:grid-cols-2 gap-6">
+                  <div className="p-6 bg-destructive/5 rounded-lg border-2 border-destructive/20">
+                    <div className="text-center">
+                      <p className="text-sm text-muted-foreground mb-2">Было</p>
+                      <p className="text-5xl font-bold text-destructive">0.1%</p>
+                      <p className="text-sm text-muted-foreground mt-2">конверсия</p>
+                    </div>
+                  </div>
+                  <div className="p-6 bg-primary/5 rounded-lg border-2 border-primary/20">
+                    <div className="text-center">
+                      <p className="text-sm text-muted-foreground mb-2">Стало</p>
+                      <p className="text-5xl font-bold text-primary">1%</p>
+                      <p className="text-sm text-muted-foreground mt-2">конверсия</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 px-4 bg-gradient-to-br from-primary/5 to-accent/5">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-primary">
