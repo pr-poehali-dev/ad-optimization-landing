@@ -703,12 +703,9 @@ const Index = () => {
 
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-primary">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
             Форматы работы
           </h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">
-            Я бесплатно проведу анализ вашей ситуации и создам индивидуальный план масштабирования
-          </p>
 
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="border-2 hover:border-accent transition-all duration-300 hover:shadow-xl">
