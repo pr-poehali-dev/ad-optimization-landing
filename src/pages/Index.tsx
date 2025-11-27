@@ -546,6 +546,17 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
+
+                <div className="mt-8 flex justify-center">
+                  <Button 
+                    size="lg"
+                    className="bg-primary hover:bg-primary/90 text-white font-semibold px-10 py-7 rounded-xl shadow-xl hover:scale-105 transition-all duration-300 text-lg"
+                    onClick={() => document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    Хочу такой же рост конверсии
+                    <Icon name="TrendingUp" className="ml-2" size={22} />
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
