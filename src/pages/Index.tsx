@@ -257,6 +257,17 @@ const Index = () => {
               </CardContent>
             </Card>
           </div>
+
+          <div className="flex justify-center mt-12">
+            <Button 
+              size="lg"
+              className="bg-white hover:bg-white/90 text-primary font-semibold px-10 py-7 rounded-xl shadow-xl hover:scale-105 transition-all duration-300 text-lg"
+              onClick={() => document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Получить такой же ROMI 1175%
+              <Icon name="Rocket" className="ml-2" size={22} />
+            </Button>
+          </div>
         </div>
       </section>
 
