@@ -771,6 +771,9 @@ const Index = () => {
                 Важное предупреждение
               </h4>
               <p className="text-muted-foreground mb-4">
+                Вы должны знать, что я не могу помочь каждому. Это предложение не для новичков.
+              </p>
+              <p className="text-muted-foreground mb-4">
                 Я могу быть полезен только интернет-магазинам, у которых:
               </p>
               <ul className="space-y-2">
@@ -780,7 +783,7 @@ const Index = () => {
                 </li>
                 <li className="flex items-start">
                   <Icon name="Check" className="text-destructive mr-2 flex-shrink-0 mt-0.5" size={18} />
-                  <span className="text-sm">бюджет на контекстную рекламу не менее 40 000 ₽/мес.</span>
+                  <span className="text-sm">бюджет на контекстную рекламу не менее 50 000 ₽/мес.</span>
                 </li>
               </ul>
             </CardContent>
