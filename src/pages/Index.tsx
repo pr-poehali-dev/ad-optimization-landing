@@ -11,6 +11,7 @@ const Index = () => {
   const { toast } = useToast();
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [modalImageSrc, setModalImageSrc] = useState('');
+  const [isFormModalOpen, setIsFormModalOpen] = useState(false);
 
   const openImageModal = (src: string) => {
     setModalImageSrc(src);
@@ -37,6 +38,7 @@ const Index = () => {
       description: "Свяжемся с вами в течение 8 рабочих часов.",
     });
     setFormData({ name: '', phone: '', website: '', budget: '', comment: '' });
+    setIsFormModalOpen(false);
   };
 
   return (
@@ -412,7 +414,7 @@ const Index = () => {
                       <Button 
                         size="lg"
                         className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-6 rounded-xl shadow-lg hover:scale-105 transition-all duration-300"
-                        onClick={() => document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' })}
+                        onClick={() => setIsFormModalOpen(true)}
                       >
                         Проверить мою рекламу
                         <Icon name="ArrowRight" className="ml-2" size={20} />
@@ -488,7 +490,7 @@ const Index = () => {
                     <Button 
                       size="lg"
                       className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-6 rounded-xl shadow-lg hover:scale-105 transition-all duration-300"
-                      onClick={() => document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' })}
+                      onClick={() => setIsFormModalOpen(true)}
                     >
                       Получить аудит моей рекламы
                       <Icon name="ArrowRight" className="ml-2" size={20} />
@@ -950,6 +952,111 @@ const Index = () => {
               className="max-w-full max-h-[90vh] object-contain rounded-lg"
               onClick={(e) => e.stopPropagation()}
             />
+          </div>
+        </div>
+      )}
+
+      {isFormModalOpen && (
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+          <div className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+            <Card className="border-none shadow-2xl">
+              <CardContent className="p-8">
+                <button
+                  onClick={() => setIsFormModalOpen(false)}
+                  className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors"
+                  aria-label="Закрыть"
+                >
+                  <Icon name="X" size={28} />
+                </button>
+
+                <div className="text-center mb-8">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-3 text-primary">
+                    Записаться на бесплатную стратегическую сессию
+                  </h2>
+                  <p className="text-muted-foreground">
+                    Заполните анкету, и я свяжусь с вами в течение 8 рабочих часов
+                  </p>
+                </div>
+
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div>
+                    <label className="block text-sm font-semibold mb-2 text-foreground">
+                      Ваше имя *
+                    </label>
+                    <Input
+                      required
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      placeholder="Иван Иванов"
+                      className="h-12"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-semibold mb-2 text-foreground">
+                      Телефон *
+                    </label>
+                    <Input
+                      required
+                      type="tel"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      placeholder="+7 (999) 123-45-67"
+                      className="h-12"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-semibold mb-2 text-foreground">
+                      Сайт интернет-магазина *
+                    </label>
+                    <Input
+                      required
+                      type="url"
+                      value={formData.website}
+                      onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+                      placeholder="https://example.com"
+                      className="h-12"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-semibold mb-2 text-foreground">
+                      Бюджет на рекламу в месяц *
+                    </label>
+                    <Input
+                      required
+                      value={formData.budget}
+                      onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
+                      placeholder="50 000 руб."
+                      className="h-12"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-semibold mb-2 text-foreground">
+                      Комментарий (опционально)
+                    </label>
+                    <Textarea
+                      value={formData.comment}
+                      onChange={(e) => setFormData({ ...formData, comment: e.target.value })}
+                      placeholder="Расскажите о текущей ситуации с рекламой..."
+                      rows={4}
+                      className="resize-none"
+                    />
+                  </div>
+
+                  <Button 
+                    type="submit" 
+                    size="lg" 
+                    className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg py-6 rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
+                  >
+                    Отправить заявку
+                    <Icon name="Send" className="ml-2" size={20} />
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
           </div>
         </div>
       )}
