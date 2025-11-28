@@ -975,10 +975,17 @@ const Index = () => {
       )}
 
       {isFormModalOpen && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-2 sm:p-4 animate-fade-in overflow-y-auto">
-          <div className="relative w-full max-w-2xl my-auto animate-scale-in">
-            <Card className="border-none shadow-2xl">
-              <CardContent className="p-4 sm:p-6 md:p-8">
+        <div 
+          className="fixed inset-0 bg-black/50 z-50 animate-fade-in overflow-y-auto"
+          onClick={() => setIsFormModalOpen(false)}
+        >
+          <div className="min-h-screen flex items-center justify-center p-2 sm:p-4">
+            <div 
+              className="relative w-full max-w-2xl my-4 animate-scale-in"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Card className="border-none shadow-2xl">
+                <CardContent className="p-4 sm:p-6 md:p-8">
                 <button
                   onClick={() => setIsFormModalOpen(false)}
                   className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors"
@@ -987,18 +994,18 @@ const Index = () => {
                   <Icon name="X" size={28} />
                 </button>
 
-                <div className="text-center mb-6 sm:mb-8">
-                  <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-3 text-primary">
+                <div className="text-center mb-4 sm:mb-6 md:mb-8">
+                  <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold mb-2 text-primary leading-tight">
                     Записаться на бесплатную стратегическую сессию
                   </h2>
-                  <p className="text-sm sm:text-base text-muted-foreground">
+                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
                     Заполните анкету, и я свяжусь с вами в течение 8 рабочих часов
                   </p>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4 md:space-y-6">
                   <div>
-                    <label className="block text-sm font-semibold mb-2 text-foreground">
+                    <label className="block text-xs sm:text-sm font-semibold mb-1 sm:mb-2 text-foreground">
                       Ваше имя *
                     </label>
                     <Input
@@ -1006,12 +1013,12 @@ const Index = () => {
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="Иван Иванов"
-                      className="h-11 sm:h-12"
+                      className="h-10 sm:h-11 text-sm sm:text-base"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold mb-2 text-foreground">
+                    <label className="block text-xs sm:text-sm font-semibold mb-1 sm:mb-2 text-foreground">
                       Телефон *
                     </label>
                     <Input
@@ -1020,12 +1027,12 @@ const Index = () => {
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       placeholder="+7 (999) 123-45-67"
-                      className="h-11 sm:h-12"
+                      className="h-10 sm:h-11 text-sm sm:text-base"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold mb-2 text-foreground">
+                    <label className="block text-xs sm:text-sm font-semibold mb-1 sm:mb-2 text-foreground">
                       Сайт интернет-магазина *
                     </label>
                     <Input
@@ -1034,12 +1041,12 @@ const Index = () => {
                       value={formData.website}
                       onChange={(e) => setFormData({ ...formData, website: e.target.value })}
                       placeholder="https://example.com"
-                      className="h-11 sm:h-12"
+                      className="h-10 sm:h-11 text-sm sm:text-base"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold mb-2 text-foreground">
+                    <label className="block text-xs sm:text-sm font-semibold mb-1 sm:mb-2 text-foreground">
                       Бюджет на рекламу в месяц *
                     </label>
                     <Input
@@ -1047,34 +1054,35 @@ const Index = () => {
                       value={formData.budget}
                       onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                       placeholder="50 000 руб."
-                      className="h-11 sm:h-12"
+                      className="h-10 sm:h-11 text-sm sm:text-base"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold mb-2 text-foreground">
+                    <label className="block text-xs sm:text-sm font-semibold mb-1 sm:mb-2 text-foreground">
                       Комментарий (опционально)
                     </label>
                     <Textarea
                       value={formData.comment}
                       onChange={(e) => setFormData({ ...formData, comment: e.target.value })}
                       placeholder="Расскажите о текущей ситуации с рекламой..."
-                      rows={4}
-                      className="resize-none"
+                      rows={3}
+                      className="resize-none text-sm sm:text-base"
                     />
                   </div>
 
                   <Button 
                     type="submit" 
                     size="lg" 
-                    className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-base sm:text-lg py-5 sm:py-6 rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
+                    className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-sm sm:text-base md:text-lg py-4 sm:py-5 md:py-6 rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
                   >
                     Отправить заявку
-                    <Icon name="Send" className="ml-2" size={20} />
+                    <Icon name="Send" className="ml-2" size={18} />
                   </Button>
                 </form>
               </CardContent>
             </Card>
+            </div>
           </div>
         </div>
       )}
