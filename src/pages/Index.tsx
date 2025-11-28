@@ -693,7 +693,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="space-y-6 max-w-2xl mx-auto">
             <Card className="border-2 border-accent/30 hover:border-accent transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
@@ -725,7 +725,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-white">
+      <section className="py-10 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
             Форматы работы
