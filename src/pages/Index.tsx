@@ -693,8 +693,8 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="space-y-6">
-            <Card className="border-2 border-accent/30 hover:border-accent transition-all duration-300 max-w-2xl mx-auto">
+          <div className="space-y-6 max-w-2xl mx-auto">
+            <Card className="border-2 border-accent/30 hover:border-accent transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="bg-accent/10 p-2 rounded-lg mr-3">
@@ -708,7 +708,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-primary/30 hover:border-primary transition-all duration-300 max-w-2xl mx-auto">
+            <Card className="border-2 border-primary/30 hover:border-primary transition-all duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="bg-primary/10 p-2 rounded-lg mr-3">
@@ -784,36 +784,38 @@ const Index = () => {
                 </div>
               </CardContent>
             </Card>
-
-            <Card className="bg-destructive/5 border-destructive/20 max-w-2xl mx-auto">
-              <CardContent className="p-6">
-                <h4 className="font-bold text-lg mb-3 flex items-center">
-                  <Icon name="AlertCircle" className="text-destructive mr-2" size={24} />
-                  Важное предупреждение
-                </h4>
-                <p className="text-muted-foreground mb-4">
-                  Вы должны знать, что я не могу помочь каждому. Это предложение не для новичков.
-                </p>
-                <p className="text-muted-foreground mb-4">
-                  Я могу быть полезен только интернет-магазинам, у которых:
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <Icon name="Check" className="text-destructive mr-2 flex-shrink-0 mt-0.5" size={18} />
-                    <span className="text-sm">посетители уже совершают заказы на сайте</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Icon name="Check" className="text-destructive mr-2 flex-shrink-0 mt-0.5" size={18} />
-                    <span className="text-sm">бюджет на контекстную рекламу не менее 50 000 ₽/мес.</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
 
-
+      <section className="py-10 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <Card className="mt-8 bg-destructive/5 border-destructive/20">
+            <CardContent className="p-6">
+              <h4 className="font-bold text-lg mb-3 flex items-center">
+                <Icon name="AlertCircle" className="text-destructive mr-2" size={24} />
+                Важное предупреждение
+              </h4>
+              <p className="text-muted-foreground mb-4">
+                Вы должны знать, что я не могу помочь каждому. Это предложение не для новичков.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                Я могу быть полезен только интернет-магазинам, у которых:
+              </p>
+              <ul className="space-y-2">
+                <li className="flex items-start">
+                  <Icon name="Check" className="text-destructive mr-2 flex-shrink-0 mt-0.5" size={18} />
+                  <span className="text-sm">посетители уже совершают заказы на сайте</span>
+                </li>
+                <li className="flex items-start">
+                  <Icon name="Check" className="text-destructive mr-2 flex-shrink-0 mt-0.5" size={18} />
+                  <span className="text-sm">бюджет на контекстную рекламу не менее 50 000 ₽/мес.</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
 
       <section id="form" className="py-16 px-4 bg-gradient-to-br from-primary to-primary/90 text-white">
         <div className="max-w-2xl mx-auto">
