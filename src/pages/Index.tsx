@@ -48,10 +48,12 @@ const Index = () => {
         
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-12 animate-fade-in">
-            <Badge className="mb-8 text-lg md:text-xl px-8 py-3 bg-accent text-accent-foreground hover:bg-accent/90">
-              <span className="block md:inline">Руководство для владельцев</span>
-              <span className="block md:inline md:ml-2">интернет-магазинов</span>
-            </Badge>
+            <div className="mb-8">
+              <Badge className="text-base md:text-xl px-6 py-3 bg-accent text-accent-foreground hover:bg-accent/90 inline-block">
+                <span className="block md:inline text-center">Руководство для владельцев</span>
+                <span className="block md:inline md:ml-2 text-center">интернет-магазинов</span>
+              </Badge>
+            </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-to-r from-white via-accent/20 to-white bg-clip-text text-transparent">
                 3 способа увеличить
