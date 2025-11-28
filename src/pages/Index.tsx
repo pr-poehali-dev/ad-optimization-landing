@@ -975,10 +975,10 @@ const Index = () => {
       )}
 
       {isFormModalOpen && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 animate-fade-in">
-          <div className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto animate-scale-in">
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-2 sm:p-4 animate-fade-in overflow-y-auto">
+          <div className="relative w-full max-w-2xl my-auto animate-scale-in">
             <Card className="border-none shadow-2xl">
-              <CardContent className="p-8">
+              <CardContent className="p-4 sm:p-6 md:p-8">
                 <button
                   onClick={() => setIsFormModalOpen(false)}
                   className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors"
@@ -987,16 +987,16 @@ const Index = () => {
                   <Icon name="X" size={28} />
                 </button>
 
-                <div className="text-center mb-8">
-                  <h2 className="text-2xl md:text-3xl font-bold mb-3 text-primary">
+                <div className="text-center mb-6 sm:mb-8">
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-3 text-primary">
                     Записаться на бесплатную стратегическую сессию
                   </h2>
-                  <p className="text-muted-foreground">
+                  <p className="text-sm sm:text-base text-muted-foreground">
                     Заполните анкету, и я свяжусь с вами в течение 8 рабочих часов
                   </p>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                   <div>
                     <label className="block text-sm font-semibold mb-2 text-foreground">
                       Ваше имя *
@@ -1006,7 +1006,7 @@ const Index = () => {
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="Иван Иванов"
-                      className="h-12"
+                      className="h-11 sm:h-12"
                     />
                   </div>
 
@@ -1020,7 +1020,7 @@ const Index = () => {
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       placeholder="+7 (999) 123-45-67"
-                      className="h-12"
+                      className="h-11 sm:h-12"
                     />
                   </div>
 
@@ -1034,7 +1034,7 @@ const Index = () => {
                       value={formData.website}
                       onChange={(e) => setFormData({ ...formData, website: e.target.value })}
                       placeholder="https://example.com"
-                      className="h-12"
+                      className="h-11 sm:h-12"
                     />
                   </div>
 
@@ -1047,7 +1047,7 @@ const Index = () => {
                       value={formData.budget}
                       onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                       placeholder="50 000 руб."
-                      className="h-12"
+                      className="h-11 sm:h-12"
                     />
                   </div>
 
@@ -1067,7 +1067,7 @@ const Index = () => {
                   <Button 
                     type="submit" 
                     size="lg" 
-                    className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg py-6 rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
+                    className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-base sm:text-lg py-5 sm:py-6 rounded-xl shadow-xl hover:scale-105 transition-all duration-300"
                   >
                     Отправить заявку
                     <Icon name="Send" className="ml-2" size={20} />
