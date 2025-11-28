@@ -965,8 +965,8 @@ const Index = () => {
       )}
 
       {isFormModalOpen && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-          <div className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 animate-fade-in">
+          <div className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto animate-scale-in">
             <Card className="border-none shadow-2xl">
               <CardContent className="p-8">
                 <button
