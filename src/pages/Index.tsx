@@ -650,7 +650,7 @@ const Index = () => {
             </p>
           </div>
 
-          <Card className="border-2 border-primary/20 shadow-lg mb-8">
+          <Card className="border-2 border-primary/20 shadow-lg mb-8 max-w-2xl mx-auto">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold mb-6 text-center text-primary">
                 Вот как мы это сделаем
@@ -716,9 +716,72 @@ const Index = () => {
                   </div>
                   <h4 className="text-xl font-bold">Вторая</h4>
                 </div>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground mb-6">
                   Вы захотите, чтобы я поработал с вами лично. Это возможно в двух форматах работы:
                 </p>
+
+                <div className="grid md:grid-cols-2 gap-6 mt-6">
+                  <div className="border-2 border-accent/20 rounded-lg p-6 hover:border-accent transition-all duration-300">
+                    <Badge className="mb-4 bg-primary text-white">Доступно 2 места</Badge>
+                    <h3 className="text-xl font-bold mb-4">Пакет консультаций</h3>
+                    <div className="mb-6">
+                      <div className="text-3xl font-bold text-accent mb-2">3 × 5 900 ₽</div>
+                      <p className="text-muted-foreground text-sm">Работаем месяц (обычно 3 недели)</p>
+                    </div>
+                    <ul className="space-y-3">
+                      <li className="flex items-start">
+                        <Icon name="CheckCircle" size={18} className="text-accent mr-2 flex-shrink-0 mt-0.5" />
+                        <span className="text-sm">Доработка оффера, УТП и структуры сайта</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Icon name="CheckCircle" size={18} className="text-accent mr-2 flex-shrink-0 mt-0.5" />
+                        <span className="text-sm">Стратегическая разведка конкурентов</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Icon name="CheckCircle" size={18} className="text-accent mr-2 flex-shrink-0 mt-0.5" />
+                        <span className="text-sm">Чек-листы по проверке каждого элемента</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Icon name="CheckCircle" size={18} className="text-accent mr-2 flex-shrink-0 mt-0.5" />
+                        <span className="text-sm">Помощь с техническими моментами</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="border-2 border-accent rounded-lg p-6 hover:shadow-lg transition-all duration-300 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 bg-accent text-accent-foreground px-3 py-1 text-xs font-semibold">
+                      Популярное
+                    </div>
+                    <Badge className="mb-4 bg-accent text-accent-foreground">Доступно 1 место</Badge>
+                    <h3 className="text-xl font-bold mb-4">Все под ключ</h3>
+                    <div className="mb-6">
+                      <div className="text-3xl font-bold text-accent mb-2">от 45 000 ₽</div>
+                      <p className="text-muted-foreground text-sm">Срок до 90 дней, возможна рассрочка</p>
+                    </div>
+                    <ul className="space-y-3">
+                      <li className="flex items-start">
+                        <Icon name="CheckCircle" size={18} className="text-accent mr-2 flex-shrink-0 mt-0.5" />
+                        <span className="text-sm">Я и моя команда сделаем всю работу за вас</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Icon name="CheckCircle" size={18} className="text-accent mr-2 flex-shrink-0 mt-0.5" />
+                        <span className="text-sm">Полный аудит и настройка рекламы</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Icon name="CheckCircle" size={18} className="text-accent mr-2 flex-shrink-0 mt-0.5" />
+                        <span className="text-sm">Доработка сайта под конверсии</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Icon name="CheckCircle" size={18} className="text-accent mr-2 flex-shrink-0 mt-0.5" />
+                        <span className="text-sm">Система аналитики и отчетности</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Icon name="CheckCircle" size={18} className="text-accent mr-2 flex-shrink-0 mt-0.5" />
+                        <span className="text-sm">Сопровождение на всех этапах</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -727,64 +790,6 @@ const Index = () => {
 
       <section className="py-10 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
-            Форматы работы
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-2 hover:border-accent transition-all duration-300 hover:shadow-xl">
-              <CardContent className="p-8">
-                <Badge className="mb-4 bg-primary text-white">Доступно 2 места</Badge>
-                <h3 className="text-2xl font-bold mb-4">Пакет консультаций</h3>
-                <div className="mb-6">
-                  <div className="text-4xl font-bold text-accent mb-2">3 × 5 900 ₽</div>
-                  <p className="text-muted-foreground">Работаем месяц (обычно 3 недели)</p>
-                </div>
-                <ul className="space-y-3 mb-6">
-                  {[
-                    'Доработка оффера, УТП и структуры сайта',
-                    'Стратегическая разведка конкурентов',
-                    'Чек-листы по проверке каждого элемента',
-                    'Помощь с техническими моментами'
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-start">
-                      <Icon name="CheckCircle" size={20} className="text-accent mr-2 flex-shrink-0 mt-0.5" />
-                      <span className="text-sm">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 border-accent hover:shadow-2xl transition-all duration-300 relative overflow-hidden">
-              <div className="absolute top-0 right-0 bg-accent text-accent-foreground px-4 py-1 text-sm font-semibold">
-                Популярное
-              </div>
-              <CardContent className="p-8">
-                <Badge className="mb-4 bg-accent text-accent-foreground">Доступно 1 место</Badge>
-                <h3 className="text-2xl font-bold mb-4">Все под ключ</h3>
-                <div className="mb-6">
-                  <div className="text-4xl font-bold text-accent mb-2">от 45 000 ₽</div>
-                  <p className="text-muted-foreground">Срок до 90 дней, возможна рассрочка</p>
-                </div>
-                <ul className="space-y-3 mb-6">
-                  {[
-                    'Я и моя команда сделаем всю работу за вас',
-                    'Полный аудит и настройка рекламы',
-                    'Доработка сайта под конверсии',
-                    'Система аналитики и отчетности',
-                    'Сопровождение на всех этапах'
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-start">
-                      <Icon name="CheckCircle" size={20} className="text-accent mr-2 flex-shrink-0 mt-0.5" />
-                      <span className="text-sm">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-
           <Card className="mt-8 bg-destructive/5 border-destructive/20">
             <CardContent className="p-6">
               <h4 className="font-bold text-lg mb-3 flex items-center">
