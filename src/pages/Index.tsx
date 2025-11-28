@@ -71,7 +71,7 @@ const Index = () => {
             </p>
             <Button 
               size="lg" 
-              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-xl px-12 py-7 rounded-2xl shadow-2xl hover:shadow-yellow-400/50 hover:scale-105 transition-all duration-300"
+              className="bg-cyan-400 hover:bg-cyan-500 text-gray-900 font-bold text-xl px-12 py-7 rounded-2xl shadow-2xl hover:shadow-cyan-400/50 hover:scale-105 transition-all duration-300"
               onClick={() => document.getElementById('target-section')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Читать
