@@ -117,7 +117,7 @@ const Index = () => {
                     <h3 className="text-xl font-semibold">Вы рекламируетесь <br className="hidden md:block" />в Яндекс Директ</h3>
                   </div>
                   <p className="text-muted-foreground">
-                    Это может быть любая реклама: поиск, товарная галерея, РСЯ. Рекламный бюджет от 40000 рублей в месяц с НДС.
+                    Это может быть любая реклама: поиск, товарная галерея, РСЯ. Рекламный бюджет от 50000 рублей в месяц с НДС.
                   </p>
                 </div>
               </CardContent>
@@ -524,16 +524,14 @@ const Index = () => {
                   </div>
                   <div className="flex-1">
                     <Badge className="mb-3 bg-primary text-white">Результат</Badge>
-                    <h3 className="text-2xl font-bold mb-2">Рост конверсии на +900%</h3>
-                    <p className="text-muted-foreground">
-                      На большой дистанции получается внушительные результат в виде роста процента конверсии рекламного трафика.
-                    </p>
+                    <h3 className="text-2xl font-bold mb-2">Рост % конверсии на 900%</h3>
+
                   </div>
                 </div>
 
                 <div className="space-y-4 text-muted-foreground">
                   <p className="text-lg">
-                    В первые два года работы над интернет-магазином удалось вырастить конверсию рекламного трафика <span className="font-bold text-primary">с 0.1% до 1%</span> это <span className="font-bold text-primary text-2xl">+900%!!!</span>
+                    В первые два года работы над интернет-магазином удалось вырастить конверсию рекламного трафика <span className="font-bold text-primary">с 0.1% до 1%</span>.
                   </p>
                 </div>
 
@@ -592,7 +590,7 @@ const Index = () => {
               Какая сейчас у вас конверсия? 0.1% или еще ниже?
             </p>
             <p className="text-xl text-muted-foreground mb-4">
-              Хотите, чтобы я бесплатно помог вам разработать план привлечения клиентов, который будет работать в 2-3 раза эффективнее, по сравнению с текущей ситуацией?
+              Хотите, чтобы я бесплатно помог вам разработать план привлечения клиентов, который будет работать в 5-10 раз эффективнее, по сравнению с текущей ситуацией?
             </p>
           </div>
 
