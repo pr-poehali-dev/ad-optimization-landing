@@ -114,7 +114,7 @@ const Index = () => {
                         className="w-8 h-8 rounded-full"
                       />
                     </div>
-                    <h3 className="text-xl font-semibold">Вы рекламируетесь в Яндекс Директ</h3>
+                    <h3 className="text-xl font-semibold">Вы рекламируетесь <br className="hidden md:block" />в Яндекс Директ</h3>
                   </div>
                   <p className="text-muted-foreground">
                     Это может быть любая реклама: поиск, товарная галерея, РСЯ. Рекламный бюджет от 40000 рублей в месяц с НДС.
@@ -167,7 +167,7 @@ const Index = () => {
                 <div className="md:col-span-2">
                   <h3 className="text-2xl font-bold mb-4">Меня зовут Цыбуля Алексей</h3>
                   <div className="space-y-4 text-muted-foreground">
-                    <p>Живу в Ижевске, женат есть двое сыновей.</p>
+                    <p>Живу в Ижевске, женат, есть двое сыновей.</p>
                     <p>
                       <strong className="text-foreground">Образование:</strong> Маркетолог, БГТУ им. В. Г. Шухова, выпуск 2018 года.
                     </p>
