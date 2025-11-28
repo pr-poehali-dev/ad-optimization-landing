@@ -71,17 +71,17 @@ const Index = () => {
             </p>
             <Button 
               size="lg" 
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-8 py-6 rounded-xl shadow-2xl hover:scale-105 transition-all duration-300"
-              onClick={() => document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-white hover:bg-white/95 text-primary font-bold text-xl px-12 py-7 rounded-2xl shadow-2xl hover:shadow-accent/50 hover:scale-105 transition-all duration-300 border-2 border-white/20"
+              onClick={() => document.getElementById('target-section')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Читать
-              <Icon name="ArrowRight" className="ml-2" size={20} />
+              <Icon name="ArrowRight" className="ml-2" size={24} />
             </Button>
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-white">
+      <section id="target-section" className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
             Для кого этот материал
