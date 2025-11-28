@@ -49,7 +49,8 @@ const Index = () => {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-12 animate-fade-in">
             <Badge className="mb-8 text-lg md:text-xl px-8 py-3 bg-accent text-accent-foreground hover:bg-accent/90">
-              Руководство для владельцев <span className="inline md:inline">интернет-магазинов</span>
+              <span className="block md:inline">Руководство для владельцев</span>
+              <span className="block md:inline md:ml-2">интернет-магазинов</span>
             </Badge>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-to-r from-white via-accent/20 to-white bg-clip-text text-transparent">
@@ -57,13 +58,13 @@ const Index = () => {
               </span>
               <br />
               <span className="text-white">количество заказов </span>
-              <span className="text-accent text-5xl md:text-7xl lg:text-8xl">х2-х3</span>
+              <span className="text-accent text-5xl md:text-7xl lg:text-8xl">х5-х10</span>
               <br />
               <span className="bg-gradient-to-r from-white via-accent/20 to-white bg-clip-text text-transparent">
                 с контекстной рекламы
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto font-light">
+            <p className="text-lg md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto font-light">
               без увеличения рекламного бюджета
             </p>
             <Button 
@@ -71,7 +72,7 @@ const Index = () => {
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-8 py-6 rounded-xl shadow-2xl hover:scale-105 transition-all duration-300"
               onClick={() => document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Записаться на консультацию
+              Читать
               <Icon name="ArrowRight" className="ml-2" size={20} />
             </Button>
           </div>
