@@ -714,7 +714,7 @@ const Index = () => {
                     <Icon name="Search" size={24} className="text-primary" />
                   </div>
                   <p className="text-muted-foreground pt-2">
-                    Я выделю время, чтобы изучить именно ваши навыки, идеи и опыт.
+                    Я выделю время, чтобы изучить именно ваш интернет-магазин, опыт и наработки.
                   </p>
                 </div>
 
@@ -723,7 +723,7 @@ const Index = () => {
                     <Icon name="Target" size={24} className="text-primary" />
                   </div>
                   <p className="text-muted-foreground pt-2">
-                    Затем мы вместе определим ваши цели, необходимые рекламные инструменты.
+                    Затем мы вместе определим ваши цели и необходимые инструменты.
                   </p>
                 </div>
 
@@ -732,7 +732,7 @@ const Index = () => {
                     <Icon name="FileText" size={24} className="text-primary" />
                   </div>
                   <p className="text-muted-foreground pt-2">
-                    Исходя из того, что вы расскажете, я бесплатно разработаю схему именно под вашу ситуацию.
+                    Исходя из того, что вы расскажете, я бесплатно разработаю план-схему именно под ваш интернет магазин.
                   </p>
                 </div>
               </div>
