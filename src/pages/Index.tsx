@@ -25,6 +25,14 @@ const Index = () => {
     };
   }, [isFormModalOpen, isImageModalOpen]);
 
+  useEffect(() => {
+    if (isFormModalOpen) {
+      if (typeof window !== 'undefined' && (window as any).ym) {
+        (window as any).ym(105596370, 'reachGoal', 'popup_open');
+      }
+    }
+  }, [isFormModalOpen]);
+
   const openImageModal = (src: string) => {
     setModalImageSrc(src);
     setIsImageModalOpen(true);
