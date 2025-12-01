@@ -198,10 +198,10 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
             Кто я такой
           </h2>
-          <Card className="border-none shadow-2xl">
+          <Card className="border-none shadow-2xl overflow-visible">
             <CardContent className="p-8 md:p-12">
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="md:col-span-1 flex justify-center items-start md:sticky md:top-24 md:self-start">
+              <div className="grid md:grid-cols-3 gap-8 relative">
+                <div className="md:col-span-1 flex justify-center items-start md:sticky md:top-8 md:self-start md:h-fit">
                   <img 
                     src="https://cdn.poehali.dev/files/20201996-d9b9-4939-9206-0d2d254c1d23.JPG" 
                     alt="Семья"
