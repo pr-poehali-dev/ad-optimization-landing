@@ -43,14 +43,41 @@ const Index = () => {
     comment: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Заявка отправлена!",
-      description: "Свяжемся с вами в течение 8 рабочих часов.",
-    });
-    setFormData({ name: '', phone: '', website: '', budget: '', comment: '' });
-    setIsFormModalOpen(false);
+    
+    try {
+      const response = await fetch('https://functions.poehali.dev/b173435b-bc37-4f65-80f1-073868be2f43', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        toast({
+          title: "Заявка отправлена!",
+          description: "Свяжемся с вами в течение 8 рабочих часов.",
+        });
+        setFormData({ name: '', phone: '', website: '', budget: '', comment: '' });
+        setIsFormModalOpen(false);
+      } else {
+        toast({
+          title: "Ошибка отправки",
+          description: "Попробуйте позже или свяжитесь напрямую.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Ошибка отправки",
+        description: "Проверьте подключение к интернету.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
