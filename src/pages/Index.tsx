@@ -200,22 +200,20 @@ const Index = () => {
           </h2>
           <Card className="border-none shadow-2xl">
             <CardContent className="p-8 md:p-12">
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="md:col-span-1 flex justify-center items-start md:sticky md:top-24 md:self-start">
-                  <img 
-                    src="https://cdn.poehali.dev/files/20201996-d9b9-4939-9206-0d2d254c1d23.JPG" 
-                    alt="Семья"
-                    onClick={() => openImageModal('https://cdn.poehali.dev/files/20201996-d9b9-4939-9206-0d2d254c1d23.JPG')}
-                    className="w-full rounded-2xl shadow-lg block md:hidden cursor-pointer transition-transform active:scale-95"
-                  />
-                  <img 
-                    src="https://cdn.poehali.dev/files/0c0c8a6a-bf06-4b24-8e30-9905c84a5dac.jpg" 
-                    alt="Семья"
-                    onClick={() => openImageModal('https://cdn.poehali.dev/files/0c0c8a6a-bf06-4b24-8e30-9905c84a5dac.jpg')}
-                    className="w-full rounded-2xl shadow-lg hidden md:block cursor-pointer transition-transform hover:scale-105"
-                  />
-                </div>
-                <div className="md:col-span-2">
+              <div className="relative">
+                <img 
+                  src="https://cdn.poehali.dev/files/20201996-d9b9-4939-9206-0d2d254c1d23.JPG" 
+                  alt="Семья"
+                  onClick={() => openImageModal('https://cdn.poehali.dev/files/20201996-d9b9-4939-9206-0d2d254c1d23.JPG')}
+                  className="w-full rounded-2xl shadow-lg block md:hidden cursor-pointer transition-transform active:scale-95 mb-6"
+                />
+                <img 
+                  src="https://cdn.poehali.dev/files/0c0c8a6a-bf06-4b24-8e30-9905c84a5dac.jpg" 
+                  alt="Семья"
+                  onClick={() => openImageModal('https://cdn.poehali.dev/files/0c0c8a6a-bf06-4b24-8e30-9905c84a5dac.jpg')}
+                  className="hidden md:block md:float-left md:w-80 md:mr-6 md:mb-4 rounded-2xl shadow-lg cursor-pointer transition-transform hover:scale-105"
+                />
+                <div>
                   <h3 className="text-2xl font-bold mb-4">Меня зовут Цыбуля Алексей</h3>
                   <div className="space-y-4 text-muted-foreground">
                     <p>Живу в Ижевске, женат, есть двое сыновей.</p>
