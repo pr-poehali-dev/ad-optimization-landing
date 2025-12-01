@@ -1076,10 +1076,10 @@ const Index = () => {
                     </label>
                     <Input
                       required
-                      type="url"
+                      type="text"
                       value={formData.website}
                       onChange={(e) => setFormData({ ...formData, website: e.target.value })}
-                      placeholder="https://example.com"
+                      placeholder="example.com"
                       className="h-10 sm:h-11 text-sm sm:text-base"
                     />
                   </div>
