@@ -66,6 +66,10 @@ const Index = () => {
       const result = await response.json();
 
       if (response.ok && result.success) {
+        if (typeof window !== 'undefined' && (window as any).ym) {
+          (window as any).ym(105596370, 'reachGoal', 'form_submit');
+        }
+        
         toast({
           title: "Заявка отправлена!",
           description: "Свяжемся с вами в течение 8 рабочих часов.",
