@@ -54,13 +54,24 @@ const Index = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
+    // Нормализуем URL - добавляем https:// если нет протокола
+    let normalizedWebsite = formData.website.trim();
+    if (normalizedWebsite && !normalizedWebsite.match(/^https?:\/\//i)) {
+      normalizedWebsite = 'https://' + normalizedWebsite;
+    }
+    
+    const submitData = {
+      ...formData,
+      website: normalizedWebsite
+    };
+    
     try {
       const response = await fetch('https://functions.poehali.dev/b173435b-bc37-4f65-80f1-073868be2f43', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(submitData),
       });
 
       const result = await response.json();
@@ -916,10 +927,10 @@ const Index = () => {
                   </label>
                   <Input
                     required
-                    type="url"
+                    type="text"
                     value={formData.website}
                     onChange={(e) => setFormData({ ...formData, website: e.target.value })}
-                    placeholder="https://example.com"
+                    placeholder="example.com"
                     className="h-12"
                   />
                 </div>
