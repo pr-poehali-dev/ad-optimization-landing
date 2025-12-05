@@ -593,7 +593,7 @@ const Index = () => {
 
                 <div className="space-y-4 text-muted-foreground">
                   <p className="text-lg">
-                    В первые два года работы над интернет-магазином удалось вырастить конверсию рекламного трафика <span className="font-bold text-primary">с 0.1% до 1%</span>.
+                    На начальном этапе работы над интернет магазином поднял конверсию рекламного трафика <span className="font-bold text-primary">с 0.1% до 1%</span>.
                   </p>
                 </div>
 
