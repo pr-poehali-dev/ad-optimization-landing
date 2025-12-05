@@ -342,12 +342,9 @@ const Index = () => {
         <div className="max-w-4xl mx-auto">
           <Card className="border-2 border-accent/20 shadow-xl">
             <CardContent className="p-8">
-              <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-primary">
-                Отзыв клиента
+              <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 text-primary">
+                Благодарственное письмо от ИП Таболкина
               </h2>
-              <p className="text-center text-muted-foreground mb-8 text-lg">
-                На скрине ниже благодарность от ИП Таболкина.
-              </p>
               <div className="flex justify-center">
                 <img 
                   src="https://cdn.poehali.dev/files/2c1908eb-96fc-48e9-8655-6560dd05b26f.png"
