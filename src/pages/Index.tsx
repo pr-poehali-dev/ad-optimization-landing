@@ -740,19 +740,19 @@ const Index = () => {
 
                 <div className="flex items-start">
                   <div className="bg-primary/10 p-3 rounded-lg mr-4 flex-shrink-0">
-                    <Icon name="FileText" size={24} className="text-primary" />
+                    <Icon name="Lightbulb" size={24} className="text-primary" />
                   </div>
                   <p className="text-muted-foreground">
-                    Исходя из результатов аудита, ваших целей и того, что вы расскажете, я бесплатно разработаю план-схему именно под ваш интернет-магазин.
+                    И только тогда придёт время приступать к работе. Потому, что, если кто-то пытается навязать вам свой подход, не потратив времени на изучение вашего бизнеса просто наивный глупец.
                   </p>
                 </div>
 
                 <div className="flex items-start">
                   <div className="bg-primary/10 p-3 rounded-lg mr-4 flex-shrink-0">
-                    <Icon name="Lightbulb" size={24} className="text-primary" />
+                    <Icon name="FileText" size={24} className="text-primary" />
                   </div>
                   <p className="text-muted-foreground">
-                    И только тогда придёт время приступать к работе. Потому, что, если кто-то пытается навязать вам свой подход, не потратив времени на изучение вашего бизнеса просто наивный глупец.
+                    Исходя из результатов аудита, ваших целей и того, что вы расскажете, я бесплатно разработаю план-схему именно под ваш интернет-магазин.
                   </p>
                 </div>
               </div>
