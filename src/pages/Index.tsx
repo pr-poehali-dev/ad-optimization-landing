@@ -724,8 +724,8 @@ const Index = () => {
                   <div className="bg-primary/10 p-3 rounded-lg mr-4 flex-shrink-0">
                     <Icon name="Search" size={24} className="text-primary" />
                   </div>
-                  <p className="text-muted-foreground pt-2">
-                    Я выделю время, чтобы изучить именно ваш интернет-магазин, опыт и наработки.
+                  <p className="text-muted-foreground">
+                    Я выделю время, чтобы изучить именно ваши навыки, идеи и опыт. Провести совместный аудит ваших существующих рекламных кампаний на предмет релевантности. Аудит фида на предмет информативности названий товаров, описаний, и т. д.
                   </p>
                 </div>
 
@@ -733,8 +733,8 @@ const Index = () => {
                   <div className="bg-primary/10 p-3 rounded-lg mr-4 flex-shrink-0">
                     <Icon name="Target" size={24} className="text-primary" />
                   </div>
-                  <p className="text-muted-foreground pt-2">
-                    Затем мы вместе определим ваши цели и необходимые инструменты.
+                  <p className="text-muted-foreground">
+                    Затем мы вместе определим ваши цели и необходимые инструменты для их достижения.
                   </p>
                 </div>
 
@@ -742,8 +742,8 @@ const Index = () => {
                   <div className="bg-primary/10 p-3 rounded-lg mr-4 flex-shrink-0">
                     <Icon name="FileText" size={24} className="text-primary" />
                   </div>
-                  <p className="text-muted-foreground pt-2">
-                    Исходя из того, что вы расскажете, я бесплатно разработаю план-схему именно под ваш интернет магазин.
+                  <p className="text-muted-foreground">
+                    Исходя из результатов аудита и того, что вы расскажете, я бесплатно разработаю план-схему именно под ваш интернет-магазин.
                   </p>
                 </div>
               </div>
